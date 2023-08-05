@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,48 +10,62 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/dist/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontendmentor | results</title>
   </head>
-  <body>
+  <body class="min-h-screen bg-white md:flex md:items-center md:justify-center md:bg-paleblue">
     <h1 class="sr-only">Results Summary</h1>
-    <main>
-      <section>
-        <h2>Your Result</h2>
-        <p>
-          <span>76</span>
-          <span>of 100</span>
+    <main class="md:flex md:rounded-3xl md:overflow-hidden">
+      <section class="bg-back-gradient text-white text-center rounded-b-3xl h-auto md:rounded-b-[0] md:py-11 md:px-6">
+        <h2 class="pt-8 pb-3 text-xl opacity-70 font-bold">Your Result</h2>
+        <p
+          class="flex items-center flex-col w-32 h-32 bg-val-gradient m-auto justify-center rounded-full"
+        >
+          <span class="text-6xl font-bold">76</span>
+          <span class="opacity-70">of 100</span>
         </p>
-        <p>Great</p>
-        <p>
+        <p class="text-2xl font-bold py-6">Great</p>
+        <p class="max-w-[18rem] m-auto pb-9 opacity-70">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
-      <section>
-        <h2>Summary</h2>
-        <p>
+      <section class="p-7 bg-white">
+        <h2 class="text-darkgrayblue text-xl mb-4 font-bold md:text-2xl md:font-extrabold">Summary</h2>
+        <p class="flex bg-lightred/10 p-4 mb-4 rounded-xl">
           <img src="./assets/images/icon-reaction.svg" alt="reaction" />
-          <span>Reaction</span>
-          <span>80 / 100</span>
+          <span class="text-lightred ml-3 md:pr-[110px]">Reaction</span>
+          <span class="ml-auto"
+            >80 <span class="text-darkgrayblue/60">/ 100</span></span
+          >
         </p>
-        <p>
+        <p class="flex bg-orangeyyellow/10 p-4 mb-4 rounded-xl">
           <img src="./assets/images/icon-memory.svg" alt="memory" />
-          <span>Memory</span>
-          <span>92 / 100</span>
+          <span class="text-orangeyyellow ml-3">Memory</span>
+          <span class="ml-auto"
+            >92 <span class="text-darkgrayblue/60">/ 100</span></span
+          >
         </p>
-        <p>
+        <p class="flex bg-greenteal/10 p-4 mb-4 rounded-xl">
           <img src="./assets/images/icon-verbal.svg" alt="verbal" />
-          <span>verbal</span>
-          <span>61 / 100</span>
+          <span class="text-greenteal ml-3">Verbal</span>
+          <span class="ml-auto"
+            >61 <span class="text-darkgrayblue/60">/ 100</span></span
+          >
         </p>
-        <p>
+        <p class="flex bg-violetblue/10 p-4 mb-4 rounded-xl">
           <img src="./assets/images/icon-visual.svg" alt="visual" />
-          <span>Visual</span>
-          <span>72 / 100</span>
+          <span class="text-violetblue ml-3">Visual</span>
+          <span class="ml-auto"
+            >72 <span class="text-darkgrayblue/60">/ 100</span></span
+          >
         </p>
+        <button
+          class="bg-darkgrayblue w-full text-white py-3 font-bold text-xl rounded-full hover:bg-cobaltblue"
+        >
+          Continue
+        </button>
       </section>
-      <button>Continue</button>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

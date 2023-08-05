@@ -19,7 +19,18 @@ export default {
     fontFamily: {
       sans: ["Hanken Grotesk", "sans-serif"],
     },
-    extend: {},
+    fontWeight: {
+      medium: "500",
+      bold: "700",
+      extrabold: "800",
+    },
+    extend: {
+      backgroundImage: {
+        "val-gradient":
+          "linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%))",
+        "back-gradient": "linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%))",
+      },
+    },
   },
   plugins: [],
 };
